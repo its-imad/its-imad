@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 405" role="img" aria-labelledby="title desc">
+  <title id="title">Documentation operating system</title>
+  <desc id="desc">A horizontal system map showing product change flowing into signal detection, docs operations, trusted knowledge, and activation for MCP context, coding agents, AEO, GEO, and users.</desc>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --ink: #111827;
+      --muted: #64748b;
+      --line: #cbd5e1;
+      --panel: #f8fafc;
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --violet: #7c3aed;
+      --violet-soft: #ede9fe;
+      --green: #16a34a;
+      --green-soft: #dcfce7;
+      --orange: #f97316;
+      --orange-soft: #ffedd5;
+      --rose: #dc2626;
+      --rose-soft: #fee2e2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --ink: #e5e7eb;
+        --muted: #94a3b8;
+        --line: #334155;
+        --panel: #111827;
+        --blue-soft: #102a5c;
+        --violet-soft: #2e205f;
+        --green-soft: #12361f;
+        --orange-soft: #43260d;
+        --rose-soft: #43171a;
+      }
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .bg { fill: var(--bg); }
+    .title { fill: var(--ink); font-size: 30px; font-weight: 700; }
+    .subtitle { fill: var(--muted); font-size: 15px; }
+    .section { fill: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .card-title { fill: var(--ink); font-size: 18px; font-weight: 700; }
+    .card-copy { fill: var(--muted); font-size: 13px; }
+    .pill-title { fill: var(--ink); font-size: 14px; font-weight: 700; }
+    .note { fill: var(--muted); font-size: 12px; }
+    .shell { fill: var(--panel); stroke: var(--line); stroke-width: 1.2; }
+    .arrow { fill: none; stroke: var(--line); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+    .connector { fill: none; stroke: var(--line); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); opacity: .9; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1,1 L8,5 L1,9" fill="none" stroke="var(--line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <filter id="shadow" x="-12%" y="-18%" width="124%" height="145%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <rect class="bg" width="920" height="405" rx="22" />
+  <text class="title" x="40" y="48">Documentation Operating System</text>
+  <text class="subtitle" x="40" y="74">Turning product change into trusted docs, agent context, and user activation.</text>
+
+  <rect class="shell" x="34" y="100" width="852" height="178" rx="22" />
+  <text class="section" x="58" y="132">From engineering motion to documented knowledge</text>
+
+  <g transform="translate(58 152)">
+    <rect width="158" height="90" rx="16" fill="var(--blue-soft)" stroke="var(--blue)" stroke-opacity=".42" />
+    <text class="card-title" x="18" y="34">Product change</text>
+    <text class="card-copy" x="18" y="59">PRs, APIs, UX</text>
+    <text class="card-copy" x="18" y="77">and releases</text>
+  </g>
+
+  <path class="arrow" d="M232 197 L282 197" />
+
+  <g transform="translate(298 152)" filter="url(#shadow)">
+    <rect width="158" height="90" rx="16" fill="var(--violet-soft)" stroke="var(--violet)" stroke-opacity=".48" />
+    <text class="card-title" x="18" y="34">Signal layer</text>
+    <text class="card-copy" x="18" y="59">Impact, priority</text>
+    <text class="card-copy" x="18" y="77">and context</text>
+  </g>
+
+  <path class="arrow" d="M472 197 L522 197" />
+
+  <g transform="translate(538 152)">
+    <rect width="158" height="90" rx="16" fill="var(--green-soft)" stroke="var(--green)" stroke-opacity=".42" />
+    <text class="card-title" x="18" y="34">Docs ops</text>
+    <text class="card-copy" x="18" y="59">Route, review</text>
+    <text class="card-copy" x="18" y="77">and measure</text>
+  </g>
+
+  <path class="arrow" d="M712 197 L762 197" />
+
+  <g transform="translate(778 152)">
+    <rect width="84" height="90" rx="16" fill="var(--orange-soft)" stroke="var(--orange)" stroke-opacity=".42" />
+    <text class="card-title" x="18" y="34">Docs</text>
+    <text class="card-copy" x="18" y="59">ready</text>
+    <text class="card-copy" x="18" y="77">to ship</text>
+  </g>
+
+  <path class="connector" d="M820 242 L820 296" />
+
+  <rect class="shell" x="34" y="306" width="852" height="62" rx="20" />
+  <text class="section" x="58" y="334">Activation layer</text>
+
+  <g transform="translate(186 322)">
+    <rect width="150" height="28" rx="14" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".32" />
+    <text class="pill-title" x="18" y="19">MCP context</text>
+  </g>
+
+  <g transform="translate(356 322)">
+    <rect width="150" height="28" rx="14" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".28" />
+    <text class="pill-title" x="18" y="19">Coding agents</text>
+  </g>
+
+  <g transform="translate(526 322)">
+    <rect width="150" height="28" rx="14" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".24" />
+    <text class="pill-title" x="18" y="19">AEO / GEO</text>
+  </g>
+
+  <g transform="translate(696 322)">
+    <rect width="150" height="28" rx="14" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".22" />
+    <text class="pill-title" x="18" y="19">User activation</text>
+  </g>
+
+  <text class="note" x="262" y="391">Feedback signals: questions, gaps, usage, and release learning feed the next documentation cycle</text>
+</svg>
