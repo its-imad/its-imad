@@ -12,7 +12,7 @@ The goal is simple: make documentation scale with the product, and make product 
 
 ## Documentation Operating System
 
-![Documentation operating system: engineering changes flow into signal detection, docs operations, delivery, MCP-ready context, coding agents, answer engines, and user activation.](assets/docops-system.svg)
+![Documentation operating system: product changes become documentation signals, operational workflows, trusted docs, MCP-ready context, coding agents, answer discovery, and user activation.](assets/docops-system-v2.svg)
 
 ## Current Focus
 
