@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" role="img" aria-labelledby="title desc">
+  <title id="title">Documentation operating system diagram</title>
+  <desc id="desc">A system map showing engineering changes flowing into documentation signals, operations, delivery, and agent and user activation.</desc>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --ink: #111827;
+      --muted: #64748b;
+      --line: #cbd5e1;
+      --panel: #f8fafc;
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --violet: #7c3aed;
+      --violet-soft: #ede9fe;
+      --green: #16a34a;
+      --green-soft: #dcfce7;
+      --orange: #f97316;
+      --orange-soft: #ffedd5;
+      --rose: #dc2626;
+      --rose-soft: #fee2e2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --ink: #e5e7eb;
+        --muted: #94a3b8;
+        --line: #334155;
+        --panel: #111827;
+        --blue-soft: #102a5c;
+        --violet-soft: #2e205f;
+        --green-soft: #12361f;
+        --orange-soft: #43260d;
+        --rose-soft: #43171a;
+      }
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .bg { fill: var(--bg); }
+    .title { fill: var(--ink); font-size: 26px; font-weight: 700; }
+    .subtitle { fill: var(--muted); font-size: 14px; }
+    .lane { fill: var(--panel); stroke: var(--line); stroke-width: 1; }
+    .label { fill: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .card-title { fill: var(--ink); font-size: 15px; font-weight: 700; }
+    .card-copy { fill: var(--muted); font-size: 12px; }
+    .chip { font-size: 11px; font-weight: 700; }
+    .arrow { fill: none; stroke: var(--line); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+    .loop { fill: none; stroke: var(--muted); stroke-width: 1.8; stroke-linecap: round; stroke-dasharray: 5 7; marker-end: url(#arrowhead-muted); opacity: .85; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,1 L7,4.5 L0,8" fill="none" stroke="var(--line)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <marker id="arrowhead-muted" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,1 L7,4.5 L0,8" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="920" height="500" rx="18" />
+
+  <text class="title" x="40" y="54">Documentation Operating System</text>
+  <text class="subtitle" x="40" y="80">Turning engineering motion into trusted docs, agent context, and user activation.</text>
+
+  <rect class="lane" x="34" y="112" width="852" height="292" rx="20" />
+
+  <g transform="translate(58 142)">
+    <text class="label" x="0" y="0">Engineering motion</text>
+    <rect x="0" y="18" width="178" height="72" rx="14" fill="var(--blue-soft)" stroke="var(--blue)" stroke-opacity=".45" />
+    <text class="card-title" x="18" y="48">Thousands of PRs</text>
+    <text class="card-copy" x="18" y="68">Code, API, UX, releases</text>
+
+    <rect x="0" y="112" width="178" height="72" rx="14" fill="var(--blue-soft)" stroke="var(--blue)" stroke-opacity=".25" />
+    <text class="card-title" x="18" y="142">Change pressure</text>
+    <text class="card-copy" x="18" y="162">Too much to track manually</text>
+  </g>
+
+  <path class="arrow" d="M250 231 C270 231 278 231 296 231" />
+
+  <g transform="translate(306 142)" filter="url(#soft-shadow)">
+    <text class="label" x="0" y="0">Signal layer</text>
+    <rect x="0" y="18" width="180" height="166" rx="18" fill="var(--violet-soft)" stroke="var(--violet)" stroke-opacity=".45" />
+    <circle cx="27" cy="51" r="8" fill="var(--violet)" />
+    <text class="card-title" x="48" y="56">Detect impact</text>
+    <text class="card-copy" x="48" y="76">Find doc-relevant changes</text>
+    <path d="M27 91 L27 109" stroke="var(--violet)" stroke-width="2" stroke-linecap="round" opacity=".55" />
+    <circle cx="27" cy="124" r="8" fill="var(--violet)" opacity=".85" />
+    <text class="card-title" x="48" y="129">Structure context</text>
+    <text class="card-copy" x="48" y="149">Prioritize and enrich signals</text>
+  </g>
+
+  <path class="arrow" d="M500 231 C520 231 528 231 546 231" />
+
+  <g transform="translate(556 142)">
+    <text class="label" x="0" y="0">Docs operations</text>
+    <rect x="0" y="18" width="154" height="72" rx="14" fill="var(--green-soft)" stroke="var(--green)" stroke-opacity=".42" />
+    <text class="card-title" x="18" y="48">Route work</text>
+    <text class="card-copy" x="18" y="68">Owners, triage, review</text>
+
+    <rect x="0" y="112" width="154" height="72" rx="14" fill="var(--green-soft)" stroke="var(--green)" stroke-opacity=".24" />
+    <text class="card-title" x="18" y="142">Measure flow</text>
+    <text class="card-copy" x="18" y="162">Dashboards and feedback</text>
+  </g>
+
+  <path class="arrow" d="M724 231 C744 231 752 231 770 231" />
+
+  <g transform="translate(776 126)">
+    <text class="label" x="0" y="0">Delivery</text>
+    <rect x="0" y="18" width="94" height="54" rx="13" fill="var(--orange-soft)" stroke="var(--orange)" stroke-opacity=".45" />
+    <text class="card-title" x="16" y="51">Docs</text>
+
+    <text class="label" x="0" y="112">Activation</text>
+    <rect x="0" y="130" width="94" height="34" rx="17" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".36" />
+    <text class="chip" x="25" y="152" fill="var(--rose)">MCP</text>
+
+    <rect x="0" y="174" width="94" height="34" rx="17" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".26" />
+    <text class="chip" x="20" y="196" fill="var(--rose)">Agents</text>
+
+    <rect x="0" y="218" width="94" height="34" rx="17" fill="var(--rose-soft)" stroke="var(--rose)" stroke-opacity=".20" />
+    <text class="chip" x="17" y="240" fill="var(--rose)">AEO/GEO</text>
+  </g>
+
+  <path class="arrow" d="M823 199 L823 246" />
+  <path class="loop" d="M824 397 C695 454 321 454 145 338" />
+  <text class="subtitle" x="384" y="456">feedback loop: usage, questions, gaps, and release learning</text>
+</svg>
